@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GPT Foundary</title>
+  <script id="datalayer-config-data" type="application/json">
+    {
+      "jupyterServerHttpUrl": "https://oss.datalayer.tech/api/jupyter",
+      "jupyterServerWsUrl": "wss://oss.datalayer.tech/api/jupyter",
+      "jupyterToken": "60c1661cc408f978c309d04157af55c9588ff9557c9380e4fb50785750703da6"
+    }
+  </script>
+
+  <!-- <script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "3e33dc69-b7a8-4a8e-9031-328e15896e08", 
+      region: "us-south",
+      serviceInstanceID: "fcb2c8cb-f285-4f84-92bc-4aee9a1d563f",
+      onLoad: async (instance) => { await instance.render(); }
+    };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/"
+  + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script> -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+</head>
+
+<body>
+  <!-- The root element where your application will be mounted -->
+  <div id="root"></div>
+
+  <!-- The script tag to load your main TypeScript file -->
+  <!-- Make sure the path is correct and matches your project structure -->
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>
